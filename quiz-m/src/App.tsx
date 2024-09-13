@@ -1,87 +1,22 @@
-
+import { Quiz } from "./components/quiz"
 
 function App() {
-// FONTE MONTSERRAT
   return (
-    <>
-      <header>
-        <img src="./logo.avif" alt="" />
+    <div className="h-screen flex flex-col items-center justify-between">
+      <header className="h-14 w-full flex justify-center items-center bg-[#F7F7F7]">
+        <img src="./logo.avif" alt="" className="w-28" />
       </header>
-      <main>
-        <div className="card">
 
-        </div>
+      <main className="w-full flex-1 flex flex-col items-center p-5 bg-[#F7F7F7]">
+        <Quiz />
       </main>
 
-      <div className="modal">
-        <img src="./logo.avif" alt="" />
-        <h2>Pesquisa oficial Marçal💙</h2>
-        <p>Responda à pesquisa Eleitoral do Pablo Marçal e ao final ganhe um KIT COMPLETO FAZ O M TOTALMENTE DE GRAÇA!!!</p>
-        <span>Pronto(a) para começar?</span>
-        <button>Quero participar</button>
-        <span>Este site é 100% seguro.</span>
-      </div>
-
-
-      <div className="rescue">
-        <h1>PARABÉNS!</h1>
-        
-        <img src="" alt="" />
-        
-        <p>Agradecemos o seu tempo, obrigado por responder nossa pesquisa eleitoral, como agradecimento, receba um KIT COMPLETO FAZ O M TOTALMENTE DE GRAÇA. Clique no botão Resgatar abaixo!
-        </p>
-
-        <p>
-          Não perca, esta é a sua chance de apoiar São Paulo!
-        </p>
-
-        <p>
-          Com apreço,
-          <br />
-          Equipe Pablo Marçal
-        </p>
-      </div>
-
-      <button>RESGATAR</button>
-      <footer>
-        <img src="./site-seguro.webp" alt="" />
+      <footer className="w-full flex flex-col items-center p-2">
+        <span className="text-center text-sm font-semibold text-black">© 2024 - Marçal</span>
+        <img src="./site-seguro.webp" alt="" className="w-44 invert" />
       </footer>
-    </>
+    </div>
   )
 }
 
 export default App
-
-const content = [
-  {
-    question: "Qual sua opinião da suspensão das redes sociais de Pablo Marçal?",
-    options: [
-      "Concordo!",
-      "Discordo!",
-      "Não tenho uma opinião"
-    ],
-  },
-  {
-    question: "Você irá votar em Pablo Marçal?",
-    options: [
-      "Sim!",
-      "Não...",
-    ],
-  },
-  {
-    question: "Você acredita que terá segundo turno?",
-    options: [
-      "Sim",
-      "Não",
-      "Talvez",
-    ],
-  },
-  {
-    question: "Quais suas expectativas para as eleições 2024?",
-    options: [
-      "Marçal prefeito de São Paulo!",
-      "Marçal fora das eleições!",
-    ],
-  },
-]
-
